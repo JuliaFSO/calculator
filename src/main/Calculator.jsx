@@ -75,7 +75,7 @@ export default class Calculator extends Component {
       const i = this.state.current
       const newValue = parseFloat(displayValue)
       const values = [...this.state.values]
-      values[i] = newValue.toFixed(4)
+      values[i] = newValue
       this.setState({ values })
     }
   };
